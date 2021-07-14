@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" />
+    <button type="button" class="add-button">추가</button>
+
+    <ul></ul>
+    <script>
+      const button = document.querySelector(".add-button");
+      button.addEventListener("click", function () {
+        const input = document.querySelector("input");
+        const li = doucument.createElement("li");
+        const p = doucument.createElement("p");
+
+        p.textcontent = index.value;
+
+        const button = document.createElement("button");
+        button.textcontent = "완료";
+
+        ul.appendchild(li);
+        li.appendchild(p);
+
+        const ul = document.querySelector("ul");
+        ul.appendChild(li);
+      });
+    </script>
+  </body>
+</html>
