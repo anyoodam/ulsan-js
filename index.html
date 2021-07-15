@@ -43,6 +43,9 @@
           //p.classlist.add('done');
           //p.classlist.remove('done');
         });
+        button.addEventListener("click", function (event) {
+          ul.removeChild(event.target.parentNode);
+        });
       });
     </script>
   </body>
