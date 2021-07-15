@@ -5,26 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style></style>
+    <style>
+      .done {
+        color: gray;
+        text-decoration: line-through;
+      }
+    </style>
   </head>
   <body>
     <input type="text" />
     <button t ype="button" class="add-button">추가하기</button>
     <ul>
-      <li>
-        <p>안녕하세요</p>
-
-        <button type="button">완료</button>
-      </li>
+      <li></li>
     </ul>
     <script scr="./scr/index.js"></script>
     <script>
       const button = document.querySelector(".add-button");
       button.addEventListener("click", function () {
         const input = document.querySelector("input");
-        ///console.dir(input.value);
         const li = document.createElement("li");
-        console.log(li); //print
+        console.log(li);
 
         const p = document.createElement("p");
         const button = document.createElement("button");
@@ -37,6 +37,12 @@
 
         const ul = document.querySelector("ul");
         ul.appendChild(li);
+
+        p.addEventListener("click", function () {
+          p.classList.toggle("done");
+          //p.classlist.add('done');
+          //p.classlist.remove('done');
+        });
       });
     </script>
   </body>
