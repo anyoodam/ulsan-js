@@ -1,0 +1,22 @@
+{
+  "name": "todo-app",
+  "version": "1.0.0",
+  "description": "- let: 변수 만들 때 사용\r   '''js\r   let a = 3;\r   a=5;",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anyoodam/ulsan-js.git"
+  },
+  "author": "yoodam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anyoodam/ulsan-js/issues"
+  },
+  "homepage": "https://github.com/anyoodam/ulsan-js#readme",
+  "dependencies": {
+    "jest": "^27.0.6"
+  }
+}
